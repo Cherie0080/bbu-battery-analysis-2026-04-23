@@ -11,39 +11,39 @@
   <meta property="og:image" content="./cover.png" />
   <style>
     :root {
-      --bg: #0f0f10;
-      --card: #171719;
-      --text: #f5f1ea;
-      --sub: #c9c1b6;
-      --accent: #d4af37;
-      --accent2: #f2e6c9;
-      --line: #2b2b2e;
-      --good: #d4af37;
+      --bg: #f6f3ee;
+      --card: #ffffff;
+      --text: #111111;
+      --sub: #66615a;
+      --accent: #b79b6c;
+      --accent2: #e8dece;
+      --line: #e9e2d8;
+      --good: #9a7b45;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
-      background: linear-gradient(180deg, #050505 0%, var(--bg) 100%);
+      background: var(--bg);
       color: var(--text);
-      line-height: 1.75;
+      line-height: 1.9;
     }
     .wrap {
-      max-width: 900px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 32px 20px 64px;
+      padding: 48px 24px 88px;
     }
     .hero {
-      background: linear-gradient(135deg, #111214 0%, #1b1b1f 62%, #2a2417 100%);
-      border: 1px solid #2f2a1f;
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 44px;
+      box-shadow: 0 18px 45px rgba(17, 17, 17, 0.05);
     }
-    h1 { font-size: 2.2rem; line-height: 1.25; margin: 0 0 12px; }
-    h2 { font-size: 1.35rem; margin-top: 36px; }
+    h1 { font-size: 2.5rem; line-height: 1.22; margin: 0 0 14px; letter-spacing: -0.02em; }
+    h2 { font-size: 1.35rem; margin-top: 46px; letter-spacing: 0.01em; }
     p, li { font-size: 1.02rem; }
-    .lead { color: #e7dcc6; font-size: 1.06rem; }
+    .lead { color: var(--sub); font-size: 1.08rem; max-width: 760px; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -53,14 +53,14 @@
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 18px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 10px 24px rgba(17, 17, 17, 0.04);
     }
     .tag {
       display: inline-block;
       padding: 4px 10px;
-      background: rgba(212, 175, 55, 0.12);
+      background: #f7f1e8;
       color: var(--good);
       border-radius: 999px;
       font-size: 0.85rem;
@@ -68,7 +68,7 @@
       margin-bottom: 8px;
     }
     .note {
-      background: #111214;
+      background: #fffdfa;
       border-left: 4px solid var(--accent);
       padding: 14px 16px;
       border-radius: 12px;
@@ -77,10 +77,10 @@
     .list li { margin-bottom: 8px; }
     .footer {
       margin-top: 48px;
-      color: #a8a29e;
+      color: #8a8278;
       font-size: 0.92rem;
     }
-    a { color: #e7c86e; }
+    a { color: #8c6b35; }
     .cover {
       width: 100%;
       max-width: 100%;
@@ -94,7 +94,7 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <div class="tag">產業整理 × 方舟複盤</div>
+      <div class="tag">INDUSTRY NOTE</div>
       <h1>BBU × 二次電池全面爆發，市場真正追的是哪一層？</h1>
       <p class="lead">這波盤面不是全面亂買 BBU，而是明顯集中在電池屬性最強、BBU 業務占比最高的核心公司。真正要看的不是題材有沒有熱，而是資金到底往哪一層集中。</p>
     </section>

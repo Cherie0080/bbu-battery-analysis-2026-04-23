@@ -1,22 +1,11 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#060606"/>
-      <stop offset="0.68" stop-color="#141416"/>
-      <stop offset="1" stop-color="#2A2417"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
-  <rect x="54" y="48" width="1092" height="534" rx="30" fill="#101012" stroke="#D4AF37" stroke-opacity="0.35"/>
-  <text x="90" y="138" fill="#D4AF37" font-family="Arial, Noto Sans TC, sans-serif" font-size="30" font-weight="700" letter-spacing="2">INDUSTRY FOCUS × REVIEW</text>
-  <text x="90" y="230" fill="#F7F2E8" font-family="Arial, Noto Sans TC, sans-serif" font-size="60" font-weight="800">BBU × 二次電池全面爆發</text>
-  <text x="90" y="308" fill="#F7F2E8" font-family="Arial, Noto Sans TC, sans-serif" font-size="40" font-weight="700">市場真正追的是哪一層？</text>
-  <line x1="90" y1="350" x2="366" y2="350" stroke="#D4AF37" stroke-width="3"/>
-  <text x="90" y="410" fill="#DDD2BF" font-family="Arial, Noto Sans TC, sans-serif" font-size="27" font-weight="500">資金不是全面買 BBU，而是集中押注</text>
-  <text x="90" y="452" fill="#DDD2BF" font-family="Arial, Noto Sans TC, sans-serif" font-size="27" font-weight="500">電池屬性最強、BBU 占比最高的核心股</text>
-  <rect x="90" y="494" width="300" height="58" rx="29" fill="#D4AF37"/>
-  <text x="126" y="531" fill="#111111" font-family="Arial, Noto Sans TC, sans-serif" font-size="26" font-weight="800">順達｜新盛力｜AES-KY</text>
-  <rect x="414" y="494" width="245" height="58" rx="29" fill="#F3E6C8"/>
-  <text x="454" y="531" fill="#111111" font-family="Arial, Noto Sans TC, sans-serif" font-size="26" font-weight="800">加百裕｜台達電</text>
-  <text x="925" y="548" fill="#D4AF37" font-family="Georgia, serif" font-size="30" font-style="italic">Luxury Market Note</text>
+  <rect width="1200" height="630" fill="#F6F3EE"/>
+  <rect x="72" y="58" width="1056" height="514" rx="26" fill="#FFFFFF" stroke="#E9E2D8"/>
+  <text x="112" y="138" fill="#9A7B45" font-family="Arial, Noto Sans TC, sans-serif" font-size="24" font-weight="700" letter-spacing="4">INDUSTRY NOTE</text>
+  <text x="112" y="238" fill="#111111" font-family="Arial, Noto Sans TC, sans-serif" font-size="58" font-weight="800">BBU × 二次電池全面爆發</text>
+  <text x="112" y="314" fill="#111111" font-family="Arial, Noto Sans TC, sans-serif" font-size="38" font-weight="700">市場真正追的是哪一層？</text>
+  <line x1="112" y1="362" x2="250" y2="362" stroke="#B79B6C" stroke-width="2"/>
+  <text x="112" y="420" fill="#66615A" font-family="Arial, Noto Sans TC, sans-serif" font-size="27" font-weight="500">資金不是全面買 BBU，而是集中在</text>
+  <text x="112" y="460" fill="#66615A" font-family="Arial, Noto Sans TC, sans-serif" font-size="27" font-weight="500">電池屬性最強、BBU 占比最高的核心股</text>
+  <text x="112" y="528" fill="#9A7B45" font-family="Georgia, serif" font-size="28" font-style="italic">Minimal Luxury Edition</text>
 </svg>
