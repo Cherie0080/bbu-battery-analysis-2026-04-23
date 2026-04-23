@@ -34,15 +34,18 @@
       line-height: 1.75;
     }
     .wrap {
+      width: 100%;
       max-width: 860px;
       margin: 0 auto;
-      padding: 22px 16px 80px;
+      padding: 16px 12px 72px;
+      overflow-x: hidden;
     }
     .hero {
+      width: 100%;
       background: linear-gradient(180deg, #fffaf5 0%, #fff3e8 100%);
       border: 1px solid var(--line);
-      border-radius: 34px;
-      padding: 30px 24px;
+      border-radius: 28px;
+      padding: 24px 18px;
       box-shadow: 0 16px 34px rgba(105, 75, 45, 0.08);
       position: relative;
       overflow: hidden;
@@ -80,19 +83,23 @@
       margin: 0;
     }
     .cover {
+      display: block;
       width: 100%;
-      border-radius: 28px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 24px;
       margin: 16px 0 6px;
       border: 1px solid var(--line);
       box-shadow: 0 16px 30px rgba(105, 75, 45, 0.08);
       background: #fff;
     }
     .section {
+      width: 100%;
       margin-top: 18px;
       background: var(--paper);
       border: 1px solid var(--line);
-      border-radius: 30px;
-      padding: 24px 20px;
+      border-radius: 24px;
+      padding: 20px 16px;
       box-shadow: 0 10px 24px rgba(17,17,17,.04);
     }
     .section h2 {
@@ -113,10 +120,12 @@
     }
     .grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .card {
+      width: 100%;
+      min-width: 0;
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 18px;
+      border-radius: 20px;
+      padding: 16px;
     }
     .num {
       width: 40px;
@@ -156,7 +165,7 @@
     }
     .stats {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0,1fr));
+      grid-template-columns: repeat(2, minmax(0,1fr));
       gap: 10px;
       margin-top: 16px;
     }
@@ -203,10 +212,17 @@
       text-align: center;
     }
     @media (max-width: 680px) {
-      .grid.two, .stats { grid-template-columns: 1fr; }
-      h1 { font-size: 1.86rem; }
-      .wrap { padding: 16px 12px 72px; }
-      .section { padding: 20px 16px; }
+      html, body { overflow-x: hidden; }
+      h1 { font-size: 1.72rem; line-height: 1.2; }
+      .lead { font-size: .96rem; }
+      .grid, .grid.two, .stats { grid-template-columns: 1fr; }
+      .wrap { padding: 12px 10px 64px; }
+      .hero { padding: 20px 16px; border-radius: 24px; }
+      .section { padding: 18px 14px; border-radius: 22px; }
+      .cover { border-radius: 20px; }
+      .bigline { font-size: 1.08rem; }
+      .pill { font-size: .78rem; }
+      .stat strong { font-size: 1.08rem; }
     }
   </style>
 </head>
