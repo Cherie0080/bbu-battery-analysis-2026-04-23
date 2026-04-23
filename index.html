@@ -60,6 +60,44 @@
       border-radius: 50%;
       background: radial-gradient(circle, rgba(184,139,90,.22) 0%, rgba(184,139,90,0) 70%);
     }
+    .brand {
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 16px;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .brand-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: .01em;
+    }
+    .brand-sub {
+      color: var(--sub);
+      margin-bottom: 6px;
+    }
+    .ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: #8a5b2f;
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .ig-icon {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 18px;
+    }
     .pill {
       display: inline-block;
       padding: 7px 14px;
@@ -70,17 +108,23 @@
       font-size: .83rem;
       font-weight: 800;
       letter-spacing: .06em;
+      position: relative;
+      z-index: 1;
     }
     h1 {
       font-size: 2.2rem;
       line-height: 1.16;
       margin: 16px 0 14px;
       letter-spacing: -0.03em;
+      position: relative;
+      z-index: 1;
     }
     .lead {
       color: var(--sub);
       font-size: 1rem;
       margin: 0;
+      position: relative;
+      z-index: 1;
     }
     .cover {
       display: block;
@@ -168,6 +212,8 @@
       grid-template-columns: repeat(2, minmax(0,1fr));
       gap: 10px;
       margin-top: 16px;
+      position: relative;
+      z-index: 1;
     }
     .stat {
       background: #fff;
@@ -223,12 +269,29 @@
       .bigline { font-size: 1.08rem; }
       .pill { font-size: .78rem; }
       .stat strong { font-size: 1.08rem; }
+      .brand-title { font-size: 1.04rem; }
+      .ig-link { align-items: flex-start; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
+      <div class="brand">
+        <div class="brand-title">鑫彤女王 𝔛𝔦𝔫𝔱𝔬𝔫𝔤 𝔔𝔲𝔢𝔢𝔫｜美人都愛賺｜</div>
+        <div class="brand-sub">▫️ 房產投資 ▫️ 理財實戰 ▫️ 美業領航</div>
+        <div class="brand-sub">艾絲緹造型團隊主理人 @estilista.wedding_</div>
+        <div class="brand-sub">─── 𝓡𝓲𝓬𝓱 𝓒𝓱𝓮𝓻𝓲𝓮 ───</div>
+        <a class="ig-link" href="https://www.instagram.com/cherie.estilista" target="_blank" rel="noopener noreferrer">
+          <svg class="ig-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/>
+          </svg>
+          Instagram｜cherie.estilista
+        </a>
+      </div>
+
       <span class="pill">股市 × 房市資產閉環</span>
       <h1>500萬如何做股市×房市資產閉環？</h1>
       <p class="lead">把房產低利槓桿和股票複利現金流結合，形成一套很多投資圈會討論的「資產放大 SOP」。這篇幫你拆成超好懂版本。</p>
@@ -256,7 +319,7 @@
           <div class="tag">先買房</div>
           <p><strong>把 500 萬當頭期款，先建立資產基座。</strong></p>
           <ul>
-            <li>鎖定龜山、青埔等具增值題材地段</li>
+            <li>鎖定北市汐止、桃園龜山等科技走廊與具增值題材地段</li>
             <li>目標房價約 2,000 萬到 2,500 萬</li>
             <li>重點是拿到低利、長年限槓桿</li>
           </ul>
@@ -347,7 +410,7 @@
         <div class="card">
           <div class="tag">房地產</div>
           <p class="bigline">先學房商，不只是學買賣</p>
-          <p class="muted">真正重要的是房產結構、現金流思維和資產配置，而不只是一次性的買進賣出。</p>
+          <p class="muted">房地產投資不是只能靠買賣賺價差，真正重要的是房產結構、現金流思維和資產配置。</p>
         </div>
       </div>
     </section>
@@ -366,7 +429,7 @@
       <span class="pill" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#f1d6b7;">講座 CTA</span>
       <h2 style="margin:14px 0 10px;font-size:1.8rem;line-height:1.25;">想學股市 × 房市的資產閉環思維？</h2>
       <p>私訊 IG 關鍵字「課程」，我會傳社群連結和報名資訊給你。從鑫彤這邊報名，還有專屬優惠。</p>
-      <a class="btn" href="#">私訊 IG：課程</a>
+      <a class="btn" href="https://www.instagram.com/cherie.estilista" target="_blank" rel="noopener noreferrer">前往 Instagram 私訊</a>
     </section>
 
     <div class="footer">本頁為公開整理版，僅供資訊與學習用途。實際投資、借貸、質押與槓桿操作前，請自行評估風險與承受能力。</div>
