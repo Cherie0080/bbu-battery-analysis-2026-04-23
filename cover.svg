@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2B8"/>
+      <stop offset="1" stop-color="#FF9F43"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <rect x="58" y="54" width="1084" height="522" rx="28" fill="#FFFDF8" fill-opacity="0.78"/>
+  <text x="86" y="150" fill="#92400E" font-family="Arial, Noto Sans TC, sans-serif" font-size="34" font-weight="700">產業焦點 × 方舟複盤</text>
+  <text x="86" y="235" fill="#111827" font-family="Arial, Noto Sans TC, sans-serif" font-size="62" font-weight="800">BBU × 二次電池全面爆發</text>
+  <text x="86" y="315" fill="#111827" font-family="Arial, Noto Sans TC, sans-serif" font-size="42" font-weight="700">市場真正追的是哪一層？</text>
+  <text x="86" y="395" fill="#7C2D12" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="600">資金不是全面買 BBU，而是集中押注</text>
+  <text x="86" y="438" fill="#7C2D12" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="600">電池屬性最強、BBU 占比最高的核心股</text>
+  <rect x="86" y="478" width="238" height="58" rx="29" fill="#F59E0B"/>
+  <text x="118" y="516" fill="#ffffff" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="700">順達｜新盛力｜AES-KY</text>
+  <rect x="351" y="478" width="198" height="58" rx="29" fill="#FB923C"/>
+  <text x="390" y="516" fill="#ffffff" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="700">加百裕｜台達電</text>
+</svg>
