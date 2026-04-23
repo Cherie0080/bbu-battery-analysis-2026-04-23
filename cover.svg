@@ -1,27 +1,26 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFDF9"/>
-      <stop offset="1" stop-color="#F3ECE1"/>
+      <stop stop-color="#FFF9F2"/>
+      <stop offset="1" stop-color="#F9ECDD"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#EAD9BC"/>
-      <stop offset="1" stop-color="#B7925B"/>
+      <stop stop-color="#F1D8B7"/>
+      <stop offset="1" stop-color="#B88B5A"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1030" cy="118" r="160" fill="#F4E6CF" fill-opacity="0.65"/>
-  <rect x="62" y="52" width="1076" height="526" rx="30" fill="#FFFFFF" stroke="#E8DFD2"/>
-  <text x="102" y="132" fill="#B7925B" font-family="Arial, Noto Sans TC, sans-serif" font-size="24" font-weight="800" letter-spacing="5">ASSET LOOP STRATEGY</text>
-  <text x="102" y="226" fill="#151515" font-family="Arial, Noto Sans TC, sans-serif" font-size="56" font-weight="800">股市 × 房市資產閉環模型</text>
-  <text x="102" y="300" fill="#151515" font-family="Arial, Noto Sans TC, sans-serif" font-size="38" font-weight="700">用房產槓桿 × 股票複利，打造資產放大系統</text>
-  <rect x="102" y="352" width="214" height="54" rx="27" fill="#111111"/>
-  <text x="139" y="387" fill="#FFFFFF" font-family="Arial, Noto Sans TC, sans-serif" font-size="24" font-weight="800">500萬起始資金</text>
-  <rect x="332" y="352" width="158" height="54" rx="27" fill="url(#gold)"/>
-  <text x="377" y="387" fill="#111111" font-family="Arial, Noto Sans TC, sans-serif" font-size="24" font-weight="800">4階段SOP</text>
-  <rect x="506" y="352" width="188" height="54" rx="27" fill="#F4EADC"/>
-  <text x="544" y="387" fill="#7A6040" font-family="Arial, Noto Sans TC, sans-serif" font-size="24" font-weight="800">風控先行</text>
-  <text x="102" y="462" fill="#6B645C" font-family="Arial, Noto Sans TC, sans-serif" font-size="27" font-weight="500">房產建立資產基座，股票建立現金流與複利引擎，</text>
-  <text x="102" y="502" fill="#6B645C" font-family="Arial, Noto Sans TC, sans-serif" font-size="27" font-weight="500">再透過增貸與質押，形成可循環的資產閉環。</text>
-  <text x="861" y="538" fill="#B7925B" font-family="Georgia, serif" font-size="28" font-style="italic">Visual Landing Page</text>
+  <circle cx="1035" cy="120" r="150" fill="#F3DEC5" fill-opacity="0.8"/>
+  <rect x="64" y="54" width="1072" height="522" rx="34" fill="#FFFDF9" stroke="#EADBCB"/>
+  <rect x="98" y="92" width="208" height="46" rx="23" fill="#FFFFFF" stroke="#EADBCB"/>
+  <text x="132" y="122" fill="#B88B5A" font-family="Arial, Noto Sans TC, sans-serif" font-size="22" font-weight="800">股市 × 房市資產閉環</text>
+  <text x="98" y="220" fill="#1A1715" font-family="Arial, Noto Sans TC, sans-serif" font-size="62" font-weight="800">500萬如何做</text>
+  <text x="98" y="292" fill="#1A1715" font-family="Arial, Noto Sans TC, sans-serif" font-size="62" font-weight="800">股市×房市資產閉環？</text>
+  <text x="98" y="364" fill="#756B63" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="500">用房產低利槓桿，搭配股票複利與現金流，</text>
+  <text x="98" y="406" fill="#756B63" font-family="Arial, Noto Sans TC, sans-serif" font-size="28" font-weight="500">拆解成 4 階段 SOP，做成一篇適合分享的圖文版。</text>
+  <rect x="98" y="462" width="188" height="56" rx="28" fill="#231F1C"/>
+  <text x="142" y="498" fill="#FFFFFF" font-family="Arial, Noto Sans TC, sans-serif" font-size="26" font-weight="800">4階段 SOP</text>
+  <rect x="302" y="462" width="214" height="56" rx="28" fill="url(#gold)"/>
+  <text x="350" y="498" fill="#231F1C" font-family="Arial, Noto Sans TC, sans-serif" font-size="26" font-weight="800">風控先看懂</text>
+  <text x="861" y="534" fill="#B88B5A" font-family="Georgia, serif" font-size="28" font-style="italic">IG / Xiaohongshu Style</text>
 </svg>

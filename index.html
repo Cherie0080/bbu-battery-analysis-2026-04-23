@@ -3,362 +3,357 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>股市 × 房市資產閉環模型，打造可複製的資產放大系統</title>
-  <meta name="description" content="用房產低利長槓桿，結合股票高流動性與複利動能，整理成一套可理解的資產閉環模型與風控框架。" />
-  <meta property="og:title" content="股市 × 房市資產閉環模型" />
-  <meta property="og:description" content="用房產低利長槓桿，結合股票複利與現金流，形成可複製的資產放大系統。" />
+  <title>500萬如何做股市×房市資產閉環？</title>
+  <meta name="description" content="把房產低利槓桿和股票複利現金流結合，整理成一篇適合分享的 IG / 小紅書風圖文長頁。" />
+  <meta property="og:title" content="500萬如何做股市×房市資產閉環？" />
+  <meta property="og:description" content="從房產基座、增貸、股票加速到股票質押，拆解四階段資產閉環 SOP。" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./cover.png" />
   <style>
     :root {
-      --bg: #f7f4ef;
-      --paper: #fffdf9;
+      --bg: #f8f2ec;
+      --paper: #fffaf5;
       --card: #ffffff;
-      --text: #151515;
-      --sub: #6b645c;
-      --gold: #b7925b;
-      --gold-soft: #efe4d3;
-      --line: #e8dfd2;
-      --dark: #1a1a1a;
-      --rose: #f8f1eb;
-      --shadow: 0 18px 45px rgba(17,17,17,.06);
+      --text: #1a1715;
+      --sub: #756b63;
+      --accent: #b88b5a;
+      --accent-soft: #f1e1cf;
+      --line: #eadbcb;
+      --dark: #231f1c;
+      --highlight: #fff1e2;
+      --rose: #fff7f0;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
       background:
-        radial-gradient(circle at top right, #fff8ef 0%, transparent 32%),
-        linear-gradient(180deg, #f9f6f1 0%, #f4f0ea 100%);
+        radial-gradient(circle at top left, #fff8f1 0%, transparent 30%),
+        linear-gradient(180deg, #fdf8f3 0%, #f8f2ec 100%);
       color: var(--text);
-      line-height: 1.8;
+      line-height: 1.75;
     }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 34px 20px 88px; }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 22px 16px 80px;
+    }
     .hero {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #fffdf9 0%, #f7f2ea 100%);
+      background: linear-gradient(180deg, #fffaf5 0%, #fff3e8 100%);
       border: 1px solid var(--line);
       border-radius: 34px;
-      box-shadow: var(--shadow);
-      padding: 54px;
+      padding: 30px 24px;
+      box-shadow: 0 16px 34px rgba(105, 75, 45, 0.08);
+      position: relative;
+      overflow: hidden;
     }
-    .hero:before {
+    .hero:after {
       content: "";
       position: absolute;
-      right: -80px;
-      top: -80px;
-      width: 280px;
-      height: 280px;
+      right: -40px;
+      top: -40px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(183,146,91,.22) 0%, rgba(183,146,91,0) 70%);
+      background: radial-gradient(circle, rgba(184,139,90,.22) 0%, rgba(184,139,90,0) 70%);
     }
-    .eyebrow {
+    .pill {
       display: inline-block;
-      font-size: .86rem;
-      letter-spacing: .22em;
-      color: var(--gold);
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--accent);
+      font-size: .83rem;
       font-weight: 800;
-      margin-bottom: 14px;
+      letter-spacing: .06em;
     }
     h1 {
-      font-size: 3rem;
-      line-height: 1.15;
+      font-size: 2.2rem;
+      line-height: 1.16;
+      margin: 16px 0 14px;
       letter-spacing: -0.03em;
-      margin: 0 0 18px;
-      max-width: 860px;
     }
     .lead {
       color: var(--sub);
-      font-size: 1.08rem;
-      max-width: 760px;
-      margin-bottom: 26px;
+      font-size: 1rem;
+      margin: 0;
     }
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 14px;
-      margin-top: 24px;
-    }
-    .stat {
-      background: rgba(255,255,255,.82);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 18px;
-      backdrop-filter: blur(10px);
-    }
-    .stat .num {
-      font-size: 1.7rem;
-      font-weight: 800;
-      color: var(--dark);
-      margin-bottom: 4px;
-    }
-    .stat .label { color: var(--sub); font-size: .95rem; }
     .cover {
       width: 100%;
       border-radius: 28px;
-      margin: 24px 0 10px;
+      margin: 16px 0 6px;
       border: 1px solid var(--line);
-      box-shadow: var(--shadow);
+      box-shadow: 0 16px 30px rgba(105, 75, 45, 0.08);
       background: #fff;
     }
-    h2 {
-      font-size: 1.5rem;
-      margin: 52px 0 18px;
-      letter-spacing: .01em;
+    .section {
+      margin-top: 18px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 24px 20px;
+      box-shadow: 0 10px 24px rgba(17,17,17,.04);
     }
-    .section-lead {
-      color: var(--sub);
-      margin-top: -4px;
-      margin-bottom: 18px;
+    .section h2 {
+      font-size: 1.45rem;
+      margin: 0 0 12px;
+      line-height: 1.3;
     }
+    .bigline {
+      font-size: 1.22rem;
+      font-weight: 800;
+      line-height: 1.45;
+      margin: 0 0 12px;
+    }
+    .muted { color: var(--sub); }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
+      gap: 14px;
     }
+    .grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
     .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 24px;
-      box-shadow: 0 10px 28px rgba(17,17,17,.04);
+      padding: 18px;
     }
-    .tag {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: var(--gold-soft);
-      color: #8e6d3c;
-      font-size: .82rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-    .flow {
-      display: grid;
-      gap: 18px;
-      margin-top: 8px;
-    }
-    .step {
-      position: relative;
-      background: linear-gradient(180deg, #fff 0%, #fdfbf7 100%);
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 26px;
-      box-shadow: 0 12px 26px rgba(17,17,17,.04);
-    }
-    .step-no {
+    .num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--dark);
+      color: #fff;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: #111;
-      color: #fff;
       font-weight: 800;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .step h3 { margin: 0 0 10px; font-size: 1.2rem; }
-    .step p, .step li { color: var(--sub); }
-    .split {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 18px;
+    .tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      background: var(--accent-soft);
+      color: #8a6135;
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: .8rem;
+      font-weight: 800;
     }
-    .note, .warn, .cta {
-      border-radius: 28px;
-      padding: 26px;
-    }
-    .note {
-      background: #fffdfa;
-      border: 1px solid var(--line);
+    .quote {
+      background: var(--highlight);
+      border: 1px solid #f0d8bf;
+      border-radius: 22px;
+      padding: 18px;
+      font-weight: 700;
+      line-height: 1.6;
     }
     .warn {
-      background: linear-gradient(135deg, #fff7f2 0%, #fffdf9 100%);
-      border: 1px solid #f0ddd0;
+      background: var(--rose);
+      border: 1px solid #f1ddd1;
+      border-radius: 24px;
+      padding: 18px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .stat {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.2rem;
+      color: var(--sub);
     }
     .cta {
-      background: linear-gradient(135deg, #151515 0%, #242424 100%);
-      color: #f8f4ec;
-      box-shadow: 0 18px 40px rgba(0,0,0,.18);
-      margin-top: 50px;
+      margin-top: 18px;
+      background: linear-gradient(135deg, #241f1c 0%, #3b2f27 100%);
+      color: #fff8f1;
+      border-radius: 30px;
+      padding: 26px 22px;
+      box-shadow: 0 18px 36px rgba(36,31,28,.2);
     }
-    .cta p { color: #ddd3c3; }
+    .cta p { color: #e8d9cc; }
     .btn {
       display: inline-block;
       margin-top: 12px;
-      padding: 12px 20px;
+      padding: 12px 18px;
       border-radius: 999px;
-      background: linear-gradient(135deg, #f4e7cf 0%, #c9a76e 100%);
-      color: #111;
+      background: linear-gradient(135deg, #f6dfc3 0%, #d5a46a 100%);
+      color: #241f1c;
       text-decoration: none;
       font-weight: 800;
     }
-    .mini-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-    }
-    ul { padding-left: 1.2rem; margin-bottom: 0; }
     .footer {
-      margin-top: 34px;
-      color: #8d857c;
-      font-size: .92rem;
+      margin-top: 20px;
+      color: #8f857d;
+      font-size: .9rem;
+      text-align: center;
     }
-    @media (max-width: 860px) {
-      .hero { padding: 32px 24px; }
-      h1 { font-size: 2.2rem; }
-      .split { grid-template-columns: 1fr; }
+    @media (max-width: 680px) {
+      .grid.two, .stats { grid-template-columns: 1fr; }
+      h1 { font-size: 1.86rem; }
+      .wrap { padding: 16px 12px 72px; }
+      .section { padding: 20px 16px; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <div class="eyebrow">ASSET LOOP STRATEGY</div>
-      <h1>用房產槓桿 × 股票複利，打造可複製的資產閉環系統</h1>
-      <p class="lead">這套模型的核心，不是單押房市，也不是單押股市，而是把房產的低利長槓桿，和股票的高流動性、股息現金流與淨值成長結合起來，形成一套可擴張的資產放大框架。</p>
-      <div class="hero-stats">
-        <div class="stat"><div class="num">500萬</div><div class="label">可操作起始資金</div></div>
-        <div class="stat"><div class="num">4階段</div><div class="label">資產閉環 SOP</div></div>
-        <div class="stat"><div class="num">12-18月</div><div class="label">建議緊急預備金</div></div>
-        <div class="stat"><div class="num">200%↑</div><div class="label">股票質押維持率目標</div></div>
+      <span class="pill">股市 × 房市資產閉環</span>
+      <h1>500萬如何做股市×房市資產閉環？</h1>
+      <p class="lead">把房產低利槓桿和股票複利現金流結合，形成一套很多投資圈會討論的「資產放大 SOP」。這篇幫你拆成超好懂版本。</p>
+      <div class="stats">
+        <div class="stat"><strong>500萬</strong><span class="muted">起始資金</span></div>
+        <div class="stat"><strong>4階段</strong><span class="muted">操作 SOP</span></div>
+        <div class="stat"><strong>12-18月</strong><span class="muted">預備金</span></div>
+        <div class="stat"><strong>200%↑</strong><span class="muted">質押維持率</span></div>
       </div>
     </section>
 
-    <img class="cover" src="./cover.png" alt="股市房市資產閉環模型視覺圖卡" />
+    <img class="cover" src="./cover.png" alt="500萬做股市房市資產閉環圖卡" />
 
-    <h2>一眼看懂，這套系統怎麼運作</h2>
-    <p class="section-lead">用一句話講，就是先用房產建立資產基座，再把增貸資金導入股票現金流與成長引擎，最後用質押與轉貸做下一輪複製。</p>
-    <div class="grid">
-      <div class="card">
-        <div class="tag">1. 房產基座</div>
-        <p>用低利、長年限房貸取得槓桿，先把資產底盤做起來。</p>
-      </div>
-      <div class="card">
-        <div class="tag">2. 增貸轉現金</div>
-        <p>當房產增值後，把資產中的低成本資金提領出來，變成流動部位。</p>
-      </div>
-      <div class="card">
-        <div class="tag">3. 股票加速</div>
-        <p>高股息支應利息，成長型與槓桿型標的追求資產擴張。</p>
-      </div>
-      <div class="card">
-        <div class="tag">4. 再複製</div>
-        <p>用股票質押與房產增貸，作為下一輪頭期款或裝潢資金。</p>
-      </div>
-    </div>
+    <section class="section">
+      <h2>先講結論，這套模型到底在做什麼？</h2>
+      <p class="bigline">用房產的低利長槓桿，去放大股票的現金流與複利效果，再透過增貸與質押，把資產滾進下一輪。</p>
+      <div class="quote">不是只買房，也不是只買股，而是把兩個市場各自最有優勢的地方，組成一個能循環的系統。</div>
+    </section>
 
-    <h2>500 萬資金的四階段閉環 SOP</h2>
-    <div class="flow">
-      <section class="step">
-        <div class="step-no">1</div>
-        <h3>以房代管，先建立資產基座</h3>
-        <p>以 500 萬作為頭期款，鎖定龜山、青埔等具科技與人口題材的地段，配置約 2,000 萬至 2,500 萬房產。</p>
-        <ul>
-          <li>優勢是利率低、年限長，屬於一般人最容易取得的大型長槓桿工具。</li>
-          <li>房產若選對地段，本質上可兼具抗通膨、保值與再融資能力。</li>
-        </ul>
-      </section>
-
-      <section class="step">
-        <div class="step-no">2</div>
-        <h3>房貸轉增貸，把增值變成可用現金</h3>
-        <p>持有 3 到 5 年後，若房價與銀行鑑價提升，就可透過轉貸或增貸，把資產中的一部分價值提領出來。</p>
-        <ul>
-          <li>這一步的關鍵，不只是資產變大，而是「把低利資金釋放出來」。</li>
-          <li>例如房產增值至 3,000 萬，就有機會多提領 400 到 500 萬現金。</li>
-        </ul>
-      </section>
-
-      <section class="step">
-        <div class="step-no">3</div>
-        <h3>把低利資金投入股票，建立自動繳貸系統</h3>
-        <p>將增貸出來的資金配置到自己熟悉的 ETF 或成長型標的，讓現金流與資產成長分開運作。</p>
-        <ul>
-          <li><strong>00919</strong> 可作為高股息現金流部位，目標是支應房貸利息。</li>
-          <li><strong>00631L / TQQQ</strong> 可作為加速資產擴張的槓桿型引擎，但波動也更大。</li>
-        </ul>
-      </section>
-
-      <section class="step">
-        <div class="step-no">4</div>
-        <h3>股票質押，不賣資產也能複製下一輪</h3>
-        <p>當股票市值來到一定規模，可透過股票質押借出資金，作為下一間房的頭期款、裝潢費或新的資產配置。</p>
-        <ul>
-          <li>房產持續增值。</li>
-          <li>股票部位持續配息與淨值成長。</li>
-          <li>下一輪資產複製，來自既有資產系統供養。</li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="split" style="margin-top:24px;">
-      <section class="note">
-        <div class="tag">模型亮點</div>
-        <h3>為什麼這個框架有吸引力</h3>
-        <p>因為房產提供低成本槓桿，股票提供高流動性與現金流，只要兩者之間的資金成本、配息能力與增值節奏能夠匹配，整個系統就有機會進入正向循環。</p>
-      </section>
-      <section class="warn">
-        <div class="tag">重要提醒</div>
-        <h3>這不是保證獲利公式</h3>
-        <p>這是一套高槓桿、高紀律模型。若忽略現金流、安全邊際、地段與維持率，閉環很可能會變成連環風險。</p>
-      </section>
-    </div>
-
-    <h2>完美閉環要守住的三個風控</h2>
-    <div class="mini-grid">
-      <div class="card">
-        <div class="tag">風控 01</div>
-        <h3>保留 12-18 個月預備金</h3>
-        <p>避免在股市回撤、升息、空租或工作收入波動時，被迫賣出部位。</p>
+    <section class="section">
+      <h2>四階段 SOP，一步一步拆給你看</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="num">1</div>
+          <div class="tag">先買房</div>
+          <p><strong>把 500 萬當頭期款，先建立資產基座。</strong></p>
+          <ul>
+            <li>鎖定龜山、青埔等具增值題材地段</li>
+            <li>目標房價約 2,000 萬到 2,500 萬</li>
+            <li>重點是拿到低利、長年限槓桿</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="num">2</div>
+          <div class="tag">再增貸</div>
+          <p><strong>等房子增值後，把價值的一部分轉成現金。</strong></p>
+          <ul>
+            <li>持有 3 到 5 年後評估轉貸 / 增貸</li>
+            <li>如果房價來到 3,000 萬，可能多提領 400 到 500 萬</li>
+            <li>這筆錢的成本通常還是房貸利率</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="num">3</div>
+          <div class="tag">股票加速</div>
+          <p><strong>把低利資金投入 ETF 與成長型部位。</strong></p>
+          <ul>
+            <li>00919 用來提供現金流</li>
+            <li>00631L / TQQQ 用來拉高成長性</li>
+            <li>目標是讓股票幫你支應房貸與創造下一桶資金</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="num">4</div>
+          <div class="tag">再複製</div>
+          <p><strong>股票部位長大後，透過質押進入下一輪。</strong></p>
+          <ul>
+            <li>不急著賣股票</li>
+            <li>用股票質押借出資金</li>
+            <li>作為下一間房的頭期款或裝潢費</li>
+          </ul>
+        </div>
       </div>
-      <div class="card">
-        <div class="tag">風控 02</div>
-        <h3>維持率至少 200% 以上</h3>
-        <p>股票質押如果安全邊際不夠，一次急跌就可能把整個系統打亂。</p>
-      </div>
-      <div class="card">
-        <div class="tag">風控 03</div>
-        <h3>地段要能增值且好轉貸</h3>
-        <p>房市閉環成立的前提，不是有房，而是有「能轉成資金的好房」。</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>小白怎麼開始學</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="tag">股票學習</div>
-        <h3>方舟運算 App</h3>
-        <p>搭配擺渡人制度，用系統化方式建立股票邏輯、節奏與風控。</p>
-        <p><strong>擺渡人編號：</strong>A08549</p>
+    <section class="section">
+      <h2>這套模型最吸引人的地方</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="tag">房產角色</div>
+          <p class="bigline">低利率、長年限、可增值、可再融資</p>
+          <p class="muted">房產像是整個系統的底盤，讓你拿到一般人最便宜的大額槓桿。</p>
+        </div>
+        <div class="card">
+          <div class="tag">股票角色</div>
+          <p class="bigline">高流動性、可配息、可複利、可質押</p>
+          <p class="muted">股票像是整個系統的引擎，負責現金流、資產增長與再放大。</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="tag">房地產學習</div>
-        <h3>從房商與結構觀念開始</h3>
-        <p>房地產不是只能靠買賣賺價差，懂結構、懂現金流、懂資產配置，反而更重要。</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>2026 房局講座資訊</h2>
-    <div class="grid">
-      <div class="card"><div class="tag">日期</div><h3>2026/05/30</h3><p>星期六</p></div>
-      <div class="card"><div class="tag">時間</div><h3>14:00 - 16:00</h3><p>下午場</p></div>
-      <div class="card"><div class="tag">地點</div><h3>兆基商務中心</h3><p>台北市松山區南京東路四段120巷11號10樓</p></div>
-      <div class="card"><div class="tag">費用</div><h3>粉絲優惠 NT$500</h3><p>從鑫彤這邊報名享專屬優惠</p></div>
-    </div>
+    <section class="section">
+      <h2>但最重要的，不是放大，而是風控</h2>
+      <div class="warn">
+        <p class="bigline">這不是保證賺錢公式，而是一套高槓桿模型。</p>
+        <p class="muted">如果現金流、維持率、房產地段、槓桿節奏控不好，原本想做閉環，最後可能變成連環壓力。</p>
+      </div>
+      <div class="grid" style="margin-top:14px;">
+        <div class="card">
+          <div class="tag">風控 1</div>
+          <p><strong>保留 12-18 個月緊急預備金</strong></p>
+          <p class="muted">避免景氣反轉、股市回檔、升息或收入波動時被迫賣資產。</p>
+        </div>
+        <div class="card">
+          <div class="tag">風控 2</div>
+          <p><strong>股票質押維持率至少 200% 以上</strong></p>
+          <p class="muted">安全邊際不夠時，一次急跌就可能被追繳或斷頭。</p>
+        </div>
+        <div class="card">
+          <div class="tag">風控 3</div>
+          <p><strong>地段要能增值，也要好轉貸</strong></p>
+          <p class="muted">有房不等於有閉環，關鍵是房子要能變成下一輪資金。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>小白想入門，可以從這裡開始</h2>
+      <div class="grid two">
+        <div class="card">
+          <div class="tag">股票</div>
+          <p class="bigline">運用「方舟運算」App</p>
+          <p class="muted">搭配擺渡人制度，從基本觀念、節奏到風控慢慢建起來。</p>
+          <p><strong>擺渡人編號：A08549</strong></p>
+        </div>
+        <div class="card">
+          <div class="tag">房地產</div>
+          <p class="bigline">先學房商，不只是學買賣</p>
+          <p class="muted">真正重要的是房產結構、現金流思維和資產配置，而不只是一次性的買進賣出。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>【2026 房局講座】資訊整理</h2>
+      <div class="grid two">
+        <div class="card"><div class="tag">日期</div><p class="bigline">2026/05/30</p><p class="muted">星期六</p></div>
+        <div class="card"><div class="tag">時間</div><p class="bigline">14:00 - 16:00</p><p class="muted">下午場</p></div>
+        <div class="card"><div class="tag">地點</div><p class="bigline">兆基商務中心</p><p class="muted">台北市松山區南京東路四段120巷11號10樓</p></div>
+        <div class="card"><div class="tag">費用</div><p class="bigline">粉絲優惠 NT$500</p><p class="muted">從鑫彤這邊報名有專屬優惠</p></div>
+      </div>
+    </section>
 
     <section class="cta">
-      <div class="eyebrow" style="color:#d6b781;">COURSE CTA</div>
-      <h2 style="margin:0 0 10px;color:#fff;font-size:2rem;">想學股票 × 房市的資產閉環思維？</h2>
-      <p>先把架構學懂，再談槓桿。先把現金流顧好，再談複製。私訊 IG「課程」，我會傳社群連結與報名資訊給你。</p>
+      <span class="pill" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#f1d6b7;">講座 CTA</span>
+      <h2 style="margin:14px 0 10px;font-size:1.8rem;line-height:1.25;">想學股市 × 房市的資產閉環思維？</h2>
+      <p>私訊 IG 關鍵字「課程」，我會傳社群連結和報名資訊給你。從鑫彤這邊報名，還有專屬優惠。</p>
       <a class="btn" href="#">私訊 IG：課程</a>
     </section>
 
-    <div class="footer">
-      本頁為公開整理版，僅供資訊整理與教學說明。涉及實際投資、借貸、質押與槓桿操作前，請自行評估風險與資金承受能力。
-    </div>
+    <div class="footer">本頁為公開整理版，僅供資訊與學習用途。實際投資、借貸、質押與槓桿操作前，請自行評估風險與承受能力。</div>
   </main>
 </body>
 </html>
